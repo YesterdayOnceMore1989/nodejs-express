@@ -88,9 +88,7 @@ app.get('/about', (req, res)=>{
 });
 
 app.get('/bad', (req, res)=>{
-  res.send({
-    errorMessage: 'Unable to handle request'
-  });
+  res.render('test.hbs');
 });
 
 app.get('/help', (req, res)=>{
