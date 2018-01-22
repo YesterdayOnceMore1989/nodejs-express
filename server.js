@@ -87,8 +87,10 @@ app.get('/about', (req, res)=>{
   })
 });
 
-app.get('/bad', (req, res)=>{
-  res.render('test.hbs');
+app.get('/test', (req, res)=>{
+  res.render('test.hbs', {
+    pageTitle: "ADDING feature AFTER DEPLOY"
+  });
 });
 
 app.get('/help', (req, res)=>{
